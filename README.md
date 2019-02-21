@@ -20,15 +20,15 @@ pip3 install pandas
 4.最后在report目录下生成 n+1 个测试报告。包括一个聚合报告和n个以cases目录下用例excel名为基础的分类报告。  
 
 项目目录结构：  
-![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/2.PNG) 
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/2.PNG)  
 用例填写说明：  
-![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/3.PNG) 
-![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/5.PNG)
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/3.PNG)
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/5.PNG)  
 报告说明：  
 ![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/4.PNG)
 ![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/6.PNG)
-![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/6.PNG)
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/6.PNG)  
 执行控制台输出：  
-![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/0.PNG)
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/0.PNG)  
 token（令牌）获取：
-![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/1.PNG) 
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/1.PNG)
