@@ -31,4 +31,6 @@ pip3 install pandas
 执行控制台输出：  
 ![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/0.PNG)  
 token（令牌）获取：
-![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/1.PNG)
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/1.PNG)  
+升级日志：  
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/log.PNG) 
