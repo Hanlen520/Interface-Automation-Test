@@ -27,7 +27,7 @@ pip3 install pandas
 报告说明：  
 ![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/4.PNG)
 ![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/6.PNG)
-![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/6.PNG)  
+![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/7.PNG)  
 执行控制台输出：  
 ![image](https://raw.githubusercontent.com/yzqyfly/Interface-Automation-Test/master/img/0.PNG)  
 token（令牌）获取：
