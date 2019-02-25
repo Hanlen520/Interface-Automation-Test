@@ -97,26 +97,32 @@ class Config(object):
     输入：断言，请求返回res
     输出：通过 or 失败
     '''
+
     def __check(self, hope, res):
-        try:
+        try:  # 没有发生异常证明是json格式的精准断言，也有可能是断言json格式错误。格式错误将按照迷糊断言处理
             hope = json.loads(hope)
             fact = json.loads(res)
-        except:
-            pass
-        for items in fact:
-            if type(fact[items]) == list:
-                for item in fact[items]:
+            for items in fact:
+                if type(fact[items]) == list:
+                    for item in fact[items]:
+                        for k in hope:
+                            if item.get(k, "") == hope[k]:
+                                return "通过"
+                if type(fact[items]) == dict:
                     for k in hope:
-                        if item.get(k, "") == hope[k]:
+                        if fact[items].get(k, "") == hope[k]:
                             return "通过"
-            if type(fact[items]) == dict:
                 for k in hope:
-                    if fact[items].get(k, "") == hope[k]:
+                    if fact.get(k, "") == hope[k]:
                         return "通过"
-            for k in hope:
-                if fact.get(k, "") == hope[k]:
-                    return "通过"
-        return "失败"
+            return "失败"
+        except:  # 发生异常执行模糊断言
+            strres = str(res)
+            strhope = str(hope)
+            if strhope in strres:
+                return "通过"
+            else:
+                return "失败"
 
     """
     英文化函数，删除制表符、换行符、空格，将中文引号、中括号、逗号替换为英文
@@ -154,14 +160,14 @@ class Config(object):
                     Config.WritexceInfo(self,item, "请求体Json构造异常")
                     print("当前正在执行：", item["用例"], datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f'), "警告:请求体Json构造异常")
                     continue
-
+                """
                 try:#断言json异常检测
                     json.loads(zh_char_hope)#断言转换为json(字典),此处不向后传参，只是帮助后面的断言函数（def __check(self, hope, res):）捕获异常，防止断言函数异常崩溃
                 except:#如果转换失败，将错误信息写入数据文件
                     Config.WritexceInfo(self,item, "断言Json构造异常")
                     print("当前正在执行：", item["用例"], datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f'), "警告:断言Json构造异常")
                     continue
-
+                """
 
                 if item["请求方式"] == "POST" or "post":
                     try:
