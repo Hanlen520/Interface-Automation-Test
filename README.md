@@ -8,7 +8,7 @@ pip3 install xlrd==1.1.0
 pip3 install XlsxWriter  
 pip3 install pandas  
 
-技术实现：  
+实现功能：  
 1.在excel中编写测试用例，自动执行测试用例，自动生成测试报告；  
 2.token(令牌)自动认证，开始输入账号和密码，将自动获取token，后续请求需要token的地方将自动填充；  
 3.多excel支持。  
