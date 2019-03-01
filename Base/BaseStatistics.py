@@ -11,16 +11,12 @@ def readInfo(path):
     with open(path, 'rb') as f:
         try:
             data = pickle.load(f)
-            #print(data)
         except EOFError:
             data = []
-            #print("读取文件错误")
-    #print("------read-------")
-    #print(data)
     return data
 
 
-def writeInfo(kw, path="data.pickle"):
+def writeInfo(kw, path):
     """
     将数据以字典的形式写入info.pickle文件
     """

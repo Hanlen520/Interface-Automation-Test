@@ -99,7 +99,7 @@ class Config(object):
     '''
 
     def __check(self, hope, res):
-        try:  # 没有发生异常证明是json格式的精准断言，也有可能是断言json格式错误。格式错误将按照迷糊断言处理
+        try:  # 没有发生异常证明是json格式的精准断言，也有可能是断言json格式错误。格式错误将按照模糊断言处理
             hope = json.loads(hope)
             fact = json.loads(res)
             for items in fact:
